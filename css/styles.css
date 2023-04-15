@@ -445,9 +445,9 @@ img {
 .footer-item {
   display: flex;
   align-items: baseline;
+  gap: 120px;
 }
 .container-logo {
-  margin-right: 120px;
 }
 .social-item-footer {
 }
