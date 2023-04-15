@@ -309,6 +309,23 @@ img {
   gap: 24px;
 }
 
+/* ------ Section 4------ */
+.custom-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 24px;
+}
+.custom-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+}
 /* -----main portfolio----- */
 .portfolio-section {
   padding: 96px 0 120px;
