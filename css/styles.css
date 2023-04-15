@@ -103,6 +103,8 @@ img {
 /* -----header----- */
 .header {
   border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-item {
   display: flex;
@@ -156,6 +158,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
 }
 .main-title {
   font-weight: 700;
@@ -277,7 +280,7 @@ img {
 .title-section-team {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
@@ -285,7 +288,7 @@ img {
   margin-bottom: 72px;
 }
 .team-dscr {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
 }
@@ -312,9 +315,9 @@ img {
   fill: var(--cloud);
 }
 
-.social-item {
+/* .social-item {
   padding-bottom: 32px;
-}
+} */
 .team-list {
   display: flex;
   align-items: center;
@@ -330,6 +333,9 @@ img {
   padding: 0px;
   gap: 24px;
 }
+.custom-item {
+  width: calc((100% - 120px) / 6);
+}
 .custom-link {
   display: flex;
   align-items: center;
@@ -339,6 +345,7 @@ img {
   border: 1px solid var(--light-slate);
   border-radius: 4px;
   fill: #afb1b8;
+  color: var(--light-slate);
 }
 
 .custom-link:hover,
@@ -346,7 +353,13 @@ img {
   border-color: var(--ocean);
   fill: var(--ocean);
 }
-
+.custom-svg {
+  fill: currentColor;
+}
+.custom-svg:hover,
+.custom-svg:focus {
+  fill: var(--ocean);
+}
 /* -----main portfolio----- */
 .portfolio-section {
   padding: 96px 0 120px;
@@ -388,8 +401,11 @@ img {
   width: calc((100% - 48px) / 3);
   background-color: var(--white);
 }
-.cards:hover,
-.cards:focus {
+.cards-link {
+  display: block;
+}
+.cards-link:hover,
+.cards-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -427,7 +443,10 @@ img {
 }
 .footer-item {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+.container-logo {
+  margin-right: 120px;
 }
 .social-item-footer {
 }
