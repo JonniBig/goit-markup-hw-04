@@ -345,7 +345,7 @@ img {
   height: 88px;
   border: 1px solid var(--light-slate);
   border-radius: 4px;
-  fill: #afb1b8;
+  /* fill: #afb1b8; */
   color: var(--light-slate);
 }
 
@@ -357,10 +357,10 @@ img {
 .custom-svg {
   fill: currentColor;
 }
-.custom-svg:hover,
+/* .custom-svg:hover,
 .custom-svg:focus {
   fill: var(--ocean);
-}
+} */
 /* -----main portfolio----- */
 .portfolio-section {
   padding: 96px 0 120px;
