@@ -352,7 +352,7 @@ img {
 .custom-link:hover,
 .custom-link:focus {
   border-color: var(--ocean);
-  fill: var(--ocean);
+  color: var(--ocean);
 }
 .custom-svg {
   fill: currentColor;
